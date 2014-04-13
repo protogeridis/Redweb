@@ -1,2 +1,390 @@
-/* Main Stylesheet */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main Styling */
+
+/* General */
+
+body{
+	font-size:13px;
+	color:#000;
+	 font-family: "proxima-nova",sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	 font-family: "proxima-nova",sans-serif;
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+a, a:link,a:visited,a:active{
+	text-decoration: none;
+}
+a{
+	color:inherit;
+}
+a:link{
+	color:inherit;
+}
+a:hover{
+	color:inherit;
+}
+
+/* Colors
+
+RED: #c4002a
+BLACK: #000000
+WHITE: #ffffff
+
+*/
+
+/* Wrappers & Helpers */
+
+.wrapper{
+	padding:30px 0;
+}
+.wrapper-red{
+	background:#c4002a;
+	padding:50px 0;
+}
+.wrapper-black{
+	background:#000000;
+}
+.wrapper-grey{
+	background:#f2f2f2;
+}
+.wrapper-white{
+	background:#ffffff;
+}
+
+.wrapper-header{
+	background:#c4002a;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.helper::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.container-relative{
+	position: relative;
+}
+.clear{
+	clear:both;
+}
+/* Header */
+
+.identity{
+
+}
+.identity-logo{
+	display: block;
+	float:left;
+	margin-right: 20px;
+}
+.identity-name{
+	font-size:16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom:5px solid #ffffff;
+	color:#ffffff;
+	display: inline-block;
+}
+.header-toggle{
+	float: right;
+	color:#ffffff;
+}
+.header-toggle i{
+	font-size:30px;
+}
+
+
+/* Intro & Tagline */
+
+.tagline{
+	color:#ffffff;
+	padding-bottom:20px;
+}
+.tagline-big{
+	font-size:140px;
+	text-transform: uppercase;
+	line-height: 0.8;
+	font-weight: 700;
+}
+.tagline-black{
+	color:#000000;
+}
+.tagline-outro{
+	display: block;
+	margin-top: 90px;
+}
+
+.arrows{
+	position:absolute;
+	bottom:30px;
+	right:0;
+}
+.arrow-vertical{
+	display: block;
+	border:5px solid #ffffff;
+	text-align: center;
+}
+.arrow-vertical i{
+	color:#ffffff;
+	font-size:30px;
+	font-weight:bold;
+	height:40px;
+	width:40px;
+	line-height: 40px;
+}
+.arrow-vertical:first-child{
+	margin-bottom: 20px;
+}
+
+/* Work */
+
+.cases{
+}
+.case {
+text-align: center;
+width: 240px;
+height:150px;
+display: inline-block;
+vertical-align: middle;
+}
+.case img{
+	 vertical-align: middle;
+}
+
+
+
+/* Contact */
+
+/* Contact */
+
+.contact{
+	padding:50px 0;
+}
+form{
+	margin:0;
+}
+.control-group-full{
+	display: block;
+	clear:both;
+	margin-top: 30px;
+}
+.control-group-half {
+width: 43.6%;
+float: left;
+}
+.control-group-half:first-child{
+	margin-right:10px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #7a0000;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #7a0000;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #7a0000;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #7a0000;
+}
+
+input[type='text'], input[type='email'], textarea{
+	background:#9a0021;
+	border:none;
+	padding:10px 20px;
+	font-size:13pt;
+	color:white;
+	width:80%;
+}
+input[type='text']:focus, input[type='email']:focus, textarea:focus{
+	box-shadow:none;
+}
+label{
+	font-size: 14px;
+margin-bottom: 15px;
+letter-spacing: 2px;
+display: block;
+color: #ffffff;
+}
+.person{
+	text-align:center;
+}
+.person-image{
+	border-radius:100%;
+	width:160px;
+	height:160px;
+	overflow:hidden;
+	margin:0 auto;
+
+}
+.person h3{
+	color:#2dd5c3;
+	font-size:15pt;
+}
+.person p{
+	color:white;
+	font-size:13pt;
+}
+
+.black-button{
+	display: inline-block;
+	width:200px;
+	background:#000000;
+	color:white;
+	border:none;
+	border-radius:0;
+	line-height: 40px;
+	height:40px;
+	margin-top: 40px;
+}
+
+
+/* Preloader */
+
+/*PRELOADER  */
+#preloader {
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#000; 
+	z-index:9999; 
+	width:100%;
+	height:100%;
+}
+
+#status {
+	width:100%;
+	height:1px;
+	position:fixed;
+	left:0;
+	top:50%; 
+	background:#c4002a;
+	margin:-2px 0; 
+}
+@keyframes "expand" {
+ 0% {
+    width: 0;
+ }
+ 100% {
+    width: 100%;
+ }
+
+}
+
+@-moz-keyframes expand {
+ 0% {
+   width: 0;
+ }
+ 100% {
+   width: 100%;
+ }
+
+}
+
+@-webkit-keyframes "expand" {
+ 0% {
+   width: 0;
+ }
+ 100% {
+   width: 100%;
+ }
+
+}
+
+@-ms-keyframes "expand" {
+ 0% {
+   width: 0;
+ }
+ 100% {
+   width: 100%;
+ }
+
+}
+
+@-o-keyframes "expand" {
+ 0% {
+   width: 0;
+ }
+ 100% {
+   width: 100%;
+ }
+
+}
+
+
+
+.expanding {
+	-webkit-animation: expand 1.5s linear;
+	-moz-animation: expand 1.5s linear;
+	-ms-animation: expand 1.5s linear;
+	-o-animation: expand 1.5s linear;
+	animation: expand 1.5s linear;
+}
+
+/* Media Queries */
+
+.container {
+max-width: 970px;
+}

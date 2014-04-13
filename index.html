@@ -6,27 +6,140 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>My Bootstrap Project</title>
+  <title>Filippos Protogeridis | User Interface Designer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+  <script type="text/javascript" src="//use.typekit.net/dox0bma.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body>
+<body class="disabled">
 
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
             <![endif]-->
 
-           <!-- <div id="preloader" class="loading-overlay">
-              <div id="status" class="loading-flip loading">&nbsp;</div>
-            </div>-->
+          <!-- Preloader -->
+  <div id="preloader">
+    <div id="status" class="expanding">&nbsp;</div>
+  </div>
+
+             <section id="header" class="wrapper wrapper-header">
+             <div class="container">
+               <div class="row">
+                 <div class="col-md-4">
+                   <aside class="identity">
+                     <img src="img/logo.png" alt="" class="identity-logo">
+                     <h1 class="identity-name">Filippos Protogeridis</h1>
+                   </aside>
+                 </div><!-- col md 4 -->
+
+                 <div class="col-md-2 col-md-offset-6">
+                   <a href="" class="header-toggle"><i class="fa fa-bars"></i></a>
+                 </div><!-- col md 2 -->
+               </div><!-- row -->
+             </div><!-- container -->
+            </section><!-- #header -->
+
+            <section id="intro" class="wrapper wrapper-red">
+           
+            <div class="container container-relative">
+
+              <div class="arrows">
+                <a href="#" class="arrow-vertical arrow-up"><i class="fa fa-angle-up"></i></a>
+                <a href="#" class="arrow-vertical arrow-down"><i class="fa fa-angle-down"></i></a>
+              </div><!-- arrows -->
+
+              <div class="row">
+                <div class="col-md-10">
+                    <aside class="tagline">
+               <h2 class="tagline-big">
+               I <span class="tagline-black">Design</span> Web and Mobile
+             </h2>
+             <small class="tagline-outro">Working somewhere around N 37° 51' 54.153'' E 23° 45' 18.16''</small>
+             </aside><!-- tagline -->
+                </div><!-- col md 7 -->
+              </div><!-- row -->
+            </div><!-- container -->
+
+
+            </section><!-- #intro -->
+
+             <section id="work" class="wrapper wrapper-black">
+            <div class="container">
+              <div class="row">
+                 <ul class="cases clearfix">
+               <li class="case">
+                 <div class="helper"><img src="img/1toms.png" alt="TOMS"></div>
+               </li>
+                <li class="case">
+                 <div class="helper"><img src="img/2sneak.png" alt="TOMS"></div>
+               </li>
+                <li class="case">
+                <div class="helper"> <img src="img/3candy.png" alt="TOMS"></div>
+               </li>
+                <li class="case">
+                <div class="helper"> <img src="img/4warply.png" alt="TOMS"></div>
+               </li>
+                <li class="case">
+                 <div class="helper"><img src="img/5aswuni.png" alt="TOMS"></div>
+               </li>
+               <li class="case">
+                 <div class="helper"><img src="img/6puro.png" alt="TOMS"></div>
+               </li>
+               <li class="case">
+                 <div class="helper"><img src="img/7efood.png" alt="TOMS"></div>
+               </li>
+               <li class="case">
+                 <div class="helper"><img src="img/8tedxaueb.png" alt="TOMS"></div>
+               </li>
+             </ul>
+              </div><!-- row -->
+            </div><!-- container -->
+            </section><!-- #work -->
+
+           
+             <section id="contact" class="wrapper wrapper-red">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <form action="">
+            <div class="control-group control-group-half">
+              <label for="">Name</label>
+            <input type="text" placeholder="John Doe">
+            </div><!-- cgroup -->
+
+            <div class="control-group control-group-half">
+              <label for="">Position</label>
+            <input type="text" placeholder="UX Designer">
+            </div><!-- cgroup -->
+            
+            <div class="clear"></div>
+
+            <div class="control-group control-group-full">
+              <label for="">Email</label>
+            <input type="email" placeholder="mail@example.com">
+            </div><!-- cgroup -->
+
+            <div class="control-group control-group-full">
+              <label for="">Message</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="My Message"></textarea>
+            </div><!-- cgroup -->
+
+            <button class="black-button">Send</button>
+          </form>
+        </div><!-- col-md-9 -->
+        
+      </div><!-- row -->
+    </div><!-- container -->
+            </section><!-- #contact -->
 
 
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
